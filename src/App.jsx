@@ -1,17 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
 
-const react = 'react.svg'
-const vite = 'vite.svg'
-
-const rpath = `static/${react}`
-const vpath = `static/${vite}`
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
+<<<<<<< HEAD
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={vpath} className="logo" alt="Vite12234 logo" />
@@ -32,6 +28,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+=======
+    <Navbar/>
+    <Hero/>
+     
+>>>>>>> d3104a245f6c98d6e3487e41058dd901b0b66aaa
     </>
   )
 }
