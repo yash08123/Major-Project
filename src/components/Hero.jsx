@@ -1,18 +1,23 @@
 const Hero = () => {
+
+
   return (
     <>
-      <div className="hero bg-Blue min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse ">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
+      <div
+        className="hero bg-Blue min-h-screen"
+        style={{ backgroundImage: 'url("static/LHero.png")' }}
+      >
+        <div className="w-full"></div>
+        <div className="hero flex ml-32 flex-col lg:flex-row items-start lg:items-start lg:justify-start text-left">
+       
           <div>
-            <h1 className="text-5xl text-Black font-bold">New Lawyer App in making!</h1>
+            <h1 className="text-5xl text-Black font-bold">
+              New Lawyer App in making!
+            </h1>
             <p className="py-6 text-Black">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut nulla dolorem recusandae minus. Quibusdam, minus? Recusandae, quas unde reiciendis eveniet dolores, ipsa optio eaque eius, eligendi libero error ut excepturi soluta delectus.
+              Making a mistake on your return can be constantly.
             </p>
-            <button className="btn  btn-primary">I&apos;m Interested</button>
+            <button className="btn btn-primary">Free Case Evaluation</button>
           </div>
         </div>
       </div>

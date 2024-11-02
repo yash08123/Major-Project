@@ -1,7 +1,11 @@
-const Navbar = () => {
+
+
+function Navbar () {
+
+
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,21 +29,14 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Option 1</a>
+                <a>Service</a>
               </li>
               <li>
-                <a>Drop</a>
-                <ul className="p-2">
-                  <li>
-                    <a>menu 1</a>
-                  </li>
-                  <li>
-                    <a>menu 2</a>
-                  </li>
-                </ul>
+                <a>About</a>
               </li>
+
               <li>
-                <a>Option 3</a>
+                <a>Contact</a>
               </li>
             </ul>
           </div>
@@ -48,28 +45,21 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Option 1</a>
+              <a>Service</a>
+            </li>
+
+            <li>
+              <a>About</a>
             </li>
             <li>
-              <details>
-                <summary>Drop</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Option 3</a>
+              <a>Contact</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+
+          
+          <a className="btn" href='/login'>Login</a>
         </div>
       </div>
     </>
