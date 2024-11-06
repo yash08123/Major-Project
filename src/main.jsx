@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import LoginPage from "./components/pages/LoginPage.jsx";
+import SignupPage from "./components/pages/SignUpPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -13,6 +14,11 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
+    // errorElement: <ErrorPage />,
+  },
+  {
+    path: "/signup",
+    element: <SignupPage />,
     // errorElement: <ErrorPage />,
   },
 ]);

@@ -1,8 +1,4 @@
-
-
-function Navbar () {
-
-
+function Navbar() {
   return (
     <>
       <div className="navbar bg-base-100 z-10">
@@ -40,7 +36,7 @@ function Navbar () {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Lawyer App</a>
+          <a href="/" className="btn btn-ghost text-xl">Lawyer App</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -57,13 +53,13 @@ function Navbar () {
           </ul>
         </div>
         <div className="navbar-end">
-
-          
-          <a className="btn" href='/login'>Login</a>
+          <a className="btn" href="/login">
+            Login
+          </a>
         </div>
       </div>
     </>
   );
-};
+}
 
 export default Navbar;

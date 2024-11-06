@@ -1,3 +1,5 @@
+
+
 const Hero = () => {
 
 
@@ -5,7 +7,7 @@ const Hero = () => {
     <>
       <div
         className="hero bg-Blue min-h-screen"
-        style={{ backgroundImage: 'url("static/LHero.png")' }}
+        style={{ backgroundImage: 'url("../../public/LHero.png")' }}
       >
         <div className="w-full"></div>
         <div className="hero flex ml-32 flex-col lg:flex-row items-start lg:items-start lg:justify-start text-left">

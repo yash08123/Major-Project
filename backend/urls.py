@@ -15,12 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
 from django.urls import path, include
 from django.views.generic import TemplateView
+from django.conf import settings
 import mainbackend.urls
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',TemplateView.as_view(template_name = "base.html")),
-    path('auth/', include('mainbackend.urls')),
+    path('auth/', include('mainbackend.urls')),  # Backend API routes
 ]
+
+# Serve React frontend from Django in production
+if not settings.DEBUG:
+    urlpatterns += [
+        path('', TemplateView.as_view(template_name="base.html")),
+        # Add any other frontend routes here as needed for production
+    ]
